@@ -6,15 +6,14 @@ Welcome! This repo contains helpful information and starter files for your proje
 
 Write here the names, career path and email of the members of the team
 
+Cassandre Cavalier - Salesforce - cassandre.cavalier@itksquare.edu.mx
+Jonathan Castillo - Javascript - jonathan.castillo@itksquare.edu.mx
+Fernando Morejon - Flutter - Fernando.Morejon@itksquare.edu.mx
+
 ## Assignation 
 
-Please use this format for your User Stories assignations
+![image](https://user-images.githubusercontent.com/113382086/192416174-7ba40480-4ead-4107-b808-e894353fb5d1.png)
 
-| User Stories     | John Doe | Jane Doe |
-| ---------------- | :--: | ---: |
-| Add US text here |  X   |      |
-| Add US text here |      |    X |
-| Add US text here |  X   |      |
 
 # Live demo
 
