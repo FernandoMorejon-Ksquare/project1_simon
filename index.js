@@ -5,7 +5,7 @@ let round = 0;
 // A variable to helps us when comparing if we are pressing the correct button
 let playerPatron = 0;
 // An empty variable to storage and change the states depending what we need
-let state = "";
+let state = "nextLevel";
 
 // We add the audios into an array
 
