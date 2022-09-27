@@ -27,13 +27,17 @@ let yellow = document.getElementById('yellow');
 let blue = document.getElementById('blue');
 let start = document.getElementById('startBtn');
 let reset = document.getElementById('resetBtn');
-
+let hardmode = document.getElementById('hard');
 
 // Once we got the elements from the html file, then we storage the square buttons into an array
 
 let squares = [red, green, yellow, blue];
 
 reset.disabled = true;
+
+hardmode.addEventListener('click', function () {
+    hardmode.disabled = true;
+})
 
 start.addEventListener('click', function () {
     if (state === "nextLevel" || state === "reset" || state === "win") {
@@ -43,6 +47,7 @@ start.addEventListener('click', function () {
         round = 0;
         playerPatron = 0;
         reset.disabled = false;
+        hardmode.disabled = true;
         title.innerText = "Simon Says!";
     }
 });
@@ -54,6 +59,7 @@ reset.addEventListener('click', function () {
     stgSquares = [];
     round = 0;
     playerPatron = 0;
+    hardmode.disabled = true;
 
 });
 
@@ -137,11 +143,20 @@ function squarePress(event) {
                 subtitle.innerText = 'Good, keep going!';
                 newLevel();
             }
+
+        }
+        else if (!(button === stgSquares[playerPatron]) && hardmode.checked) {
+            subtitle.innerText = 'Game over';
+            state = "gameOver";
+            start.disabled = false;
+            squares.disabled = true;
+            hardmode.disabled = false;
         }
         // Here if User inputs the wrong button, we show user that he failed and we call the repeat level function
         else {
             subtitle.innerText = 'You fail!'
             start.disabled = false;
+            hardmode.disabled = true;
             repeatLevel();
         }
         // Finally for this part we play the sound depending of the button we pressed
