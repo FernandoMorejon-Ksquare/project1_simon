@@ -18,6 +18,7 @@ Fernando Morejon - Flutter - Fernando.Morejon@itksquare.edu.mx
 # Live demo
 
 Please include here a link to your [live demo]([url_here_please](https://fernandomorejon-ksquare.github.io/project1_simon/))
+https://fernandomorejon-ksquare.github.io/project1_simon/
 
 # Requeriments
 You need to use the same version of node that we use in class and no external dependices can be used. This means no frameworks or libraries.
